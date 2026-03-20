@@ -21,10 +21,15 @@ Bot Handlers (bot/handlers.py)
     ├── /ask ──► Embedder (sentence-transformers)
     │                │
     │                ▼
-    │          SQLite + sqlite-vec (data/vectors.db)
+    │          SQLite + cosine similarity (data/vectors.db)
     │                │  top-k chunks
     │                ▼
     │          OpenAI GPT-4o-mini ──► Reply with answer + sources
+    │
+    ├── /summarize ──► SQLite (data/bot_state.db)
+    │                       │  last 3 interactions
+    │                       ▼
+    │                 OpenAI GPT-4o-mini ──► Summary reply
     │
     └── Photo ──► OpenAI GPT-4o-mini (vision) ──► Caption + Tags
 ```
