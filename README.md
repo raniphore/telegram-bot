@@ -7,6 +7,7 @@ A lightweight GenAI Telegram bot that answers questions from a local knowledge b
 | Command | Description |
 |---|---|
 | `/ask <query>` | Retrieves relevant chunks from knowledge base and answers using GPT-4o-mini |
+| `/summarize` | Summarises your last 3 interactions with the bot |
 | `/help` | Shows usage instructions |
 | Send a photo | Generates a caption and 3 keyword tags using GPT-4o-mini vision |
 
