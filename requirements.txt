@@ -1,0 +1,14 @@
+# Telegram bot
+python-telegram-bot[ext]>=21.0
+
+# OpenAI API (LLM + Vision)
+openai>=1.30.0
+
+# Embeddings (local, runs on CPU)
+sentence-transformers>=3.0.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Numerical operations
+numpy>=1.26.0
